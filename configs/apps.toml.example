@@ -3,10 +3,9 @@
 master = [] # master user id , account ID
 botToken = '' # bot token
 trigger = true
-# Proxy set, but not openai api, only proxy bot
-proxy = { status = false, url = "socks5://127.0.0.1:1080" }
+proxy = { status = false, url = "socks5://127.0.0.1:1080" } # Proxy set, but not openai api, only proxy bot
 
-# Base Event Api
+# Base Api
 [Controller.Api]
 host = "127.0.0.1"
 port = 8558
