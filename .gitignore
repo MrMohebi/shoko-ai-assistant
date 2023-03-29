@@ -1,2 +1,5 @@
 .idea
 run.log
+
+# configs
+configs/apps.toml
