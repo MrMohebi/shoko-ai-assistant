@@ -3,3 +3,4 @@ run.log
 
 # configs
 configs/apps.toml
+configs/ais.toml
