@@ -2,6 +2,7 @@ import time
 
 import rtoml
 from rich.console import Console
+import importlib.util
 
 
 class Dict(dict):
@@ -74,3 +75,12 @@ class ReadConfig(object):
     @staticmethod
     def saveDict(paths, data):
         return rtoml.dump(data, open(paths, 'w'))
+
+
+class LoadModule:
+    @staticmethod
+    def moduleFromFile(moduleName: str, path: str):
+        spec = importlib.util.spec_from_file_location(moduleName, path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module

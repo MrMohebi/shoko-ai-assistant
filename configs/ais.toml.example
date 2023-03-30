@@ -1,0 +1,4 @@
+# chatGPT3.5
+[AI.chatGPT3-5]
+apiToken = ""
+proxy = { status = false, url = "socks5://127.0.0.1:1080" }
