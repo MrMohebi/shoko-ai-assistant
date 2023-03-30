@@ -11,8 +11,6 @@ class Main:
 
     @staticmethod
     def defaultPrompts(userPrompt: PromptItem) -> [PromptItem]:
-        print(userPrompt.text)
-
         # morning character
         keywords = ['morning']
         if any(ext in userPrompt.text for ext in keywords):

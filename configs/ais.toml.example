@@ -1,4 +1,9 @@
 # chatGPT3.5
-[AI.chatGPT3-5]
+[AI.chatGPT35]
+model = 'gpt-3.5-turbo'
 apiToken = ""
+temperature=0.5
+maxTokens=60
+frequencyPenalty=0.0
+presencePenalty=0.0
 proxy = { status = false, url = "socks5://127.0.0.1:1080" }

@@ -30,6 +30,12 @@ class PromptManager:
             result.append(i.toDict())
         return result
 
+    def openAiFormat(self) -> list:
+        result = []
+        for i in self.getPrompt():
+            result.append({"role": i.start, "content": i.text})
+        return result
+
     def addMiddleware(self, middlewares: [str]):
         for middleware in middlewares:
             if not pathlib.Path(f"middleware/{middleware}/main.py").exists():
